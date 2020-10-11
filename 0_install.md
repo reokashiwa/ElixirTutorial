@@ -23,7 +23,6 @@ elixir has no variants
 ```
 なにもなかったですね。ではインストール。
 ```
-
 % sudo port install elixir
 --->  Computing dependencies for elixir
 The following dependencies will be installed:  erlang
