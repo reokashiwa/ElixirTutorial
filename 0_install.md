@@ -1,5 +1,5 @@
 [Elixir をインストール](https://elixir-lang.jp/install.html) のページを見よ、とある。MacPorts からでもインストールできるようだ。Ports から入れられる時にはまず info を読む、でしょう?
-```
+```ShellSession
 % port info elixir
 elixir @1.10.3 (lang)
 
@@ -17,12 +17,12 @@ Maintainers:          Email: me@milmazz.uno, GitHub: milmazz
                       Email: ciserlohn@macports.org, GitHub: ci42
 ```
 ついで variants も確認する、でしょう?
-```
+```ShellSession
 % port variants elixir
 elixir has no variants
 ```
 なにもなかったですね。ではインストール。
-```
+```ShellSession
 % sudo port install elixir
 --->  Computing dependencies for elixir
 The following dependencies will be installed:  erlang
@@ -38,7 +38,7 @@ Continue? [Y/n]: Y
 --->  No broken ports found.
 ```
 確認してみましょう。
-```
+```ShellSession
 % rehash
 % elixir --version
 Erlang/OTP 23 [erts-11.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [hipe]
@@ -46,7 +46,7 @@ Erlang/OTP 23 [erts-11.0] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads
 Elixir 1.10.3 (compiled with Erlang/OTP 23)
 ```
 ログは GitHub で記述することにして、ElixirTutorial というリポジトリを web UI で作成しました。そのリポジトリを clone してサンプルプログラムなどをここに格納することにしましょう。
-```
+```ShellSession
 % cd ~/Documents/source
 % git clone git@github.com:reokashiwa/ElixirTutorial.git
 Cloning into 'ElixirTutorial'...
